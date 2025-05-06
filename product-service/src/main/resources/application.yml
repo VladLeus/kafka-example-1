@@ -1,0 +1,6 @@
+server:
+  port: 8083
+
+# Product Service often doesn't consume or produce Kafka messages directly,
+# since the Inventory Service calls it over REST.
+# If needed, you can add Kafka settings here as well.

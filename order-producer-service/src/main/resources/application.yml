@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    # If this service ONLY produces events (no consumers), you don't need consumer config
+    # consumer:
+    #   group-id: order-producer-group
