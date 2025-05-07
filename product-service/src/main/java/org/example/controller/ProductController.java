@@ -11,6 +11,5 @@ public class ProductController {
                             @RequestParam int quantity) {
         System.out.printf("[PRODUCT-SERVICE] productId=%d quantity=%d%n",
                 productId, quantity);
-        // pretend we updated the in-memory DB
     }
 }
