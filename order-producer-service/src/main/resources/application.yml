@@ -3,6 +3,24 @@ spring:
     web-application-type: none
   kafka:
     bootstrap-servers: localhost:9092
-    # If this service ONLY produces events (no consumers), you don't need consumer config
-    # consumer:
-    #   group-id: order-producer-group
+
+# 🔽 default for “no profile”
+order:
+  producer:
+    partition: 0        # <-- fallback; JVM starts even without p0 / p1
+---
+spring:
+  config:
+    activate:
+      on-profile: p0
+order:
+  producer:
+    partition: 0
+---
+spring:
+  config:
+    activate:
+      on-profile: p1
+order:
+  producer:
+    partition: 1
