@@ -2,10 +2,17 @@ plugins {
     id("org.springframework.boot") version "3.1.0"
     id("io.spring.dependency-management") version "1.1.0"
     id("java")
+    id("io.freefair.lombok") version "8.6"
 }
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))   // <-- here
+    }
+}
 
 repositories {
     mavenCentral()
