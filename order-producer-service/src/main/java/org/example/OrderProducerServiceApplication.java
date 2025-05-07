@@ -3,11 +3,13 @@ package org.example;
 import org.example.service.OrderProducer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling
 public class OrderProducerServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderProducer.class, args);
+        SpringApplication.run(OrderProducerServiceApplication.class, args);
     }
 }

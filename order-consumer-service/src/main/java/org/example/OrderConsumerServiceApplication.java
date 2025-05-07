@@ -8,6 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OrderConsumerServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderListener.class, args);
+        SpringApplication.run(OrderConsumerServiceApplication.class, args);
     }
 }

@@ -18,7 +18,6 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.kafka:spring-kafka")
     implementation("org.springframework.boot:spring-boot-starter-web") // optional if you need endpoints
     implementation("org.apache.kafka:kafka-clients:4.0.0")

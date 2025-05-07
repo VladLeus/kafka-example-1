@@ -11,7 +11,7 @@ public class OrderProducer {
 
     private final KafkaTemplate<String, String> kafkaTemplate;
 
-    @Scheduled(fixedRate = 5_000)
+    @Scheduled(fixedRate = 1_000)
     public void sendFakeOrder() {
         String payload = """
                 { "orderId": %d, "productId": %d, "quantity": %d }
